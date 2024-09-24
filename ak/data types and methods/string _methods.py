@@ -49,7 +49,7 @@ from email.policy import strict
 # j=n[1:]
 # print(k+j)
 
-#10 characters odd number ayi varunna allam upper case akkannam?
+# 10 characters odd number must be upper case and even be lower case?
 
 # n=input('enter the string :')
 # l=len(n)
@@ -70,3 +70,4 @@ from email.policy import strict
 #         print(n[i].upper(),end='')
 #     else:
 #         print(n[i].lower(),end='')
+
