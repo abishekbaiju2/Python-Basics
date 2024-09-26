@@ -1,7 +1,6 @@
 # greet='hello world'
 # string_1= str() # create an empty string
 # string_2=greet[1:]
-from email.policy import strict
 
 # string formation
 
@@ -49,7 +48,7 @@ from email.policy import strict
 # j=n[1:]
 # print(k+j)
 
-# 10 characters odd number must be upper case and even be lower case?
+# 10 characters even number must be upper case and odd be lower case?
 
 # n=input('enter the string :')
 # l=len(n)
@@ -67,7 +66,33 @@ from email.policy import strict
 # l=len(n)
 # for i in range(l):
 #     if i%2==0:
-#         print(n[i].upper(),end='')
+#         print(n[i].lower(), end='')
 #     else:
-#         print(n[i].lower(),end='')
+#         print(n[i].upper(), end='')
+
+# to check the string is lower or upper ?
+
+# text='hello'
+# print(text.isupper())
+# print(text.islower())
+
+
+# isalpha() # to check alphabet
+# isalnum()
+# isnumeric() # to check alpha numerical
+# isdigit()
+# for num,char in enumerate(text)
+
+# to find the count of the upper and lower ?
+
+# n= 'gHcMefKjLc'
+# count=0
+# count1=0
+# for char in n:
+#     if char.islower():
+#         count+=1
+#     else:
+#         count1+=1
+# print(f'lower ={count}')
+# print(f'upper ={count1}')
 

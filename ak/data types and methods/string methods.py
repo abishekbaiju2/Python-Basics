@@ -1,6 +1,8 @@
 # word='hello world'
 # print(word)
 
+
+
 # string concatenation
 
 # a='hello'
@@ -110,6 +112,70 @@
 #                  count+=1
 #                  print(i,end=' ')
 # print(f"\n{count}")
+
+
+# word='hello/world'
+# print(word.upper())
+# print(word.lower())
+# print(word.title())
+# print(word.capitalize())
+# print(word.swapcase())
+# print(word.find('hello'))
+# print(word.index('e'))
+# print(word.replace('hello','hai'))
+# print(word.split('/'))
+# print(word.count('h'))
+
+# name=input('enter your name : ').strip()
+# to remove unwanted spaces
+# if name=='hello' :
+#     print('welcome')
+
+
+# string checkers
+
+# input a string from user and display the total count of numbers and alphabets ?
+
+# n=input('enter the word :')
+# count=0
+# count1=0
+# for i in n:
+#     if i.isalpha() :
+#         count+=1
+#     elif i.isdigit():
+#         count1+=1
+# print('alphabets',count)
+# print('digits',count1)
+
+ # take a input from a user and remove duplication?
+
+# n=input('enter the word : ')
+# r=''
+# for i in n:
+#     if i in r:
+#         continue
+#     else:
+#         r+=i
+# print(r)
+
+# text='hello'
+# for num,char in enumerate(text):
+#     print(chr,num)
+
+# input a string from the user and display each character and its position?
+
+# n=input('enter the string : ')
+# for i,char in enumerate(n):
+#     print(char,':', i)
+
+# input a string from user and convert even index position and odd to lower case ?
+
+# n=input('enter the string : ')
+# for i,char in enumerate(n):
+#     if i%2 == 0 :
+#         print(n[i].upper(),end='')
+#     else:
+#         print(n[i].lower(),end='')
 
 
 
