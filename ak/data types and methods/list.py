@@ -1,6 +1,5 @@
 # li=[1,2,'a','b','c']
 # print(li)
-from operator import rshift
 
 # element aceessing
 
