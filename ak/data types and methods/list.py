@@ -116,14 +116,16 @@
 
 # find the reverse of each number input by the user ?
 
-n=eval(input('enter the list :'))
-m=[]
-for i in n:
-    rev = 0
-    l=len(str(i))
-    for j in range(l):
-        rem=i%10
-        rev= rev * 10 + rem
-        i//=10
-    m+=[rev]
-print(m)
+# n=eval(input('enter the list :'))
+# m=[]
+# for i in n:
+#     rev = 0
+#     l=len(str(i))
+#     for j in range(l):
+#         rem=i%10
+#         rev= rev * 10 + rem
+#         i//=10
+#     m+=[rev]
+# print(m)
+
+
