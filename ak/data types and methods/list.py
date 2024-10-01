@@ -90,7 +90,7 @@
 # n=eval(input('enter the list : '))
 # t=n[0]
 # for i in range(len(n)):
-#     if(n[i]>t):
+#     if n[i]<t:
 #         t=n[i]
 # print(t)
 
@@ -99,7 +99,7 @@
 # n=eval(input('enter the list : '))
 # t=n[0]
 # for i in range(len(n)):
-#     if(n[i]<t):
+#     if n[i]>t:
 #         t=n[i]
 # print(t)
 
@@ -128,4 +128,38 @@
 #     m+=[rev]
 # print(m)
 
+# list comprehension
+# what is list comprehension ?
+# syntax
+# 3 diff problems
+# tuesday oct 1 
+
+# list methods
+
+# append()
+
+li=['a','b','c']
+li.append('d')
+print(li)
+li.insert(0,'hello')
+print(li)
+li.extend([1,2,3])
+print(li)
+print(li.index('hello'))
+li.pop()
+print(li)
+li.pop(3)
+print(li)
+li.remove('d')
+print(li)
+li1=['a','A','b','B']
+li1.sort()
+print(li1)
+li.reverse()
+print(li)
+li.clear()
+print(li)
+li1=[9,6,4,7,3,2,1,8]
+li1.sort(reverse=True)
+print(li1)
 
