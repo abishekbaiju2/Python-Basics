@@ -67,8 +67,7 @@
 #or
 
 # n=eval(input('enter the string : '))
-# f={}
-# for i in n:
+# f={}# for i in n:
 #     count=0
 #     for j in i:
 #         count+=1

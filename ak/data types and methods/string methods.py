@@ -89,7 +89,7 @@ for i in range(l,-1,-1):
     rev+=word[i]
 print(rev)
 
-# write a program to check a string input by the the user is palindrome or not?
+# write a program to check a string input by the user is palindrome or not?
 
 word=input("enter the string : ")
 rev=''
