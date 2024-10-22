@@ -1,0 +1,708 @@
+                                                               day 1
+
+-->PYTHON
+
+* python is a high level programming language
+* developed by GUIDO VANN ROSSUM
+* 1991 : first release
+* python is an open source (free)
+* beginner friendly language
+
+-->ADVANTAGES
+
+* free and easy to use
+* fast development
+* extensive libraries
+* fewer lines codes
+* object oriented
+* portable
+* scalable
+
+                                                                   day2
+
+-->print function (output console)
+       to print the messages in output string
+* string: collection of characters
+* number: int,complex,double,float
+* Boolean: true,false
+
+-->string is represented as '' or ""
+        only for string is used ''or"" not for numbers
+
+-->to create a folder
+    folder -> right click -> new -> right click ->pthon file
+
+--> command
+    # is used for command
+
+--> to all lines be command
+     select all lines -> ctrl + / (undo is same)
+
+-->python variables
+
+* a python variables is a reserved memory location to store values
+* i other words a variable in a python program gives data to the computer for processing
+
+-->rules
+
+* variable start with a letter or underscore
+* cannot start with a number
+* keywords cannot be used as variables
+* it can only contain alphanumeric characters and underscores
+* case sensitive (AGE,age,Age are 3 variables names)
+*   eg: name='abi'
+        print('my name is',name)
+    eg: company='Hilton'
+        location='tpr'
+        print(company,'is located in',location)
+
+                                                              day3
+
+-->formatters (%s)(%f)(%d)
+
+* eg:str='welcome'
+  print('hello %S',%str)
+* if two variable to scan
+  eg:print('%s located in %s'%(company,locaton))
+* to use number
+  eg:print('my age is %d',%age)
+
+-->f formatters
+* use f infront of the word to print and use {} to scan
+* eg:print(f'my name is {name} and my age is {age}')
+
+-->data types
+
+1]text data types
+
+      string  <class str>
+
+2]sequential
+
+   * list <class list>
+
+      * collection of elements
+      * any data type collection (str,int,float,list,tuple)
+      * mutable : can modify
+      * [] square bracket is represented as list
+
+   * tuple <class tuple>
+
+      * tuple is same as list
+      * immutable : can't modify
+      * () paranthesis is represented as tuple
+
+3]mapping
+
+   * dictionary <class dict>
+
+      * collection of key value pairs
+      * mutable
+      * unindexed
+      * duplications are not allowed
+      * {}
+      * eg:{key1 : value1 , key2 : value2 }
+4]set
+
+   * set <class set >
+
+      * collection of single elements
+      * mutable
+      * unindexed
+      * duplications are not allowed
+      * unordered
+      * {}
+
+--> python operators
+
+   * arithemetic
+
+      *  + , - , * , / , % , ** , //
+      * eg : 10 / 3 = 3.3333
+             10 // 3 = 3
+      * % is used to get remainder
+
+   * comparision
+
+      * == , >= , <= , < , > , !=
+
+   * logical
+
+      * and , or ,not
+      * eg : a>b and a>c : t and t : true
+                         : t and f : false
+           : a>b or a>c : t or f : true
+                        : f or f : false
+     * not(a>b): opposite of user condition
+
+  * assignment
+
+     * = , += , -= , *= , /= , **= , //= , %=
+     * eg: a=10
+           a+=2 :a= a+2 =12
+
+                                                      day4
+ * membership
+
+    * not in , in
+    * eg: char = 'a"
+          vowels="aeiou"
+          char in vowels :true
+          char not in vowels :false
+
+ *identity
+
+   * is ,is not
+   * eg: a='hello'
+         b='hello'
+         a is b : true     (check is it from same location )
+         print(id(a))
+         print(id(b))
+      :  a=[1,2,3]
+         b=[1,2,3]
+         a is b : false     ([] square bracket data is from diff location)
+
+-->user input
+
+   * input() :used to get the input from the user
+   * eg: name=input('enter the name')
+         print(f'my name is {name}')
+
+--> num % 10 : is for get last digit
+--> square : a**2
+--> cube : a**3
+-->square root : a**0.5
+--> n%2==0 :even
+-->n%2!==0   or n%2==1 :odd
+--> == : for check two values
+--> = : for add to location
+
+                                                             day 5
+--> conditional statements
+
+     * if ,else ,elif
+
+--> if satement
+
+    * if statements are control flow statements which helps us to run
+      a perticular code only when a certain condition is satisfied
+    * eg: num=int(input("enter the number"))
+          if(num>=1 and num<=10):
+          print('hello')
+
+--> else statement
+
+    * else statement contain the bloack of code that execute if the
+      conditional expression in the if statement resolves to false
+    * eg: num=int(input("enter the number"))
+          if(num%2==0):
+          print(f'{num} is even')
+          else:
+          print(f'{num} is odd')
+
+--> elif statement
+
+    * elif statement allows you to check multiple expression for
+      true and execute a block of code as soon as one of the condition evaluvates to true
+    * if(condition):
+      body of if
+      elif (condition):
+      body of elif
+      elif (condition):
+      body of elif
+      .......
+.......
+else:
+body of else
+                                                                      day 6
+
+--> .strip() won't take space
+--> .lower() covert to lowercase
+--> % kittan divide by 100 eg:15%= 15/100
+
+                                                                     day 7
+
+--> \n : is for break the line
+--> every tym check is it number or not is yes then put int
+
+--> nested if
+
+     * an if statement inside another if statement is called nested if
+     * if (condition):
+         body of if
+           if( condition):
+
+--> looping
+
+    * while loop ,for loop
+
+--> for loop
+
+    * for loops are traditionally used when you have a block of code which you want to repeat  a fixed number of times
+    * for i in range(n):
+      body of for loop
+    * had starting and ending range
+    * for i in range(n,m)
+
+                                            day 8
+
+--> find the length l=len(str(num))
+--> sum = 0
+--> product =1
+--> count += 1    find count always add 1
+
+                                           day9
+
+
+--> break keyword
+
+      *it is a keyword that is used to exit the loop entirely by skiping the remining itrations
+
+--> continue keyword
+
+      *it is used to skip the itration and move on to the next one
+
+                                         day 10
+
+--> break inside the loop
+--> exit() outside the loop
+--> for i in range(initial  , final ,inc/dec )
+     * eg: for i in range(5,31,5):
+--> end  is used to print the series in a line and how much space have you given is printed
+     * eg: print(i , end="  ")
+--> \t is tab space
+--> print() another way it is used for a new line
+
+--> while loop
+
+     * while loop is used to execute a block of statements repeatedly until a given condition is satisfied
+     * eg: i=1
+           while(i<10):
+             print(i)
+             i+=1
+--> while loop skip cheyumbol ->skip cheyunna condition increment kodukkannam
+
+                                           day 11
+--> SDLC
+
+   * software development lifecycle is the cost-efficient and time-efficient process that development teams use to design and build highy-quality software . the goal of sdlc is ti minimize project risks through forward planning so that the software meets customer expections during production and beyond .
+
+-->
+                                           day12
+
+--> armstrong number
+     * eg:153 = 1^3 + 5^3 + 3^3
+
+--> disarium number
+     *eg: 135= 1^1 + 3^2 + 5^3
+
+--> harshad number
+     *sum each digit of the number then divide the by the the sum then rem is zero then harshad
+
+
+# n=input("enter the number")
+# print('Palindrome' if n==n[::-1] else 'Not Palindrome')
+# sum=n.split('a')
+# print(sum)
+# l=len(sum)
+# print(l)
+# print('123','test',sep='*',end=' ')
+# print('chepputty'.replace('t',''))
+
+
+                                day 13
+
+--> nested for loop
+     * a for loop inside another for loop
+     * eg: for i in range(5):
+              for j in range(5):
+                   print(i,j)
+
+
+                                  day 14
+
+--> pattern printing
+
+      * i : row
+        j : star
+        k : space
+
+--> ASCII
+
+      * american standered code for information interchange
+      * A-Z : 65-90
+      * a-z : 97-122
+
+                                  day 15
+
+
+--> data types and methods
+
+    --> string
+
+        * string concatenation
+               * joining of two strings
+               * eg : a='hello'
+                      b='hai'
+                      print(a+' '+b)
+
+        * element accessing
+               * to access index postion
+               * eg : print(word[4])
+
+        * element slicing
+               * to access the part of the sequence
+               * eg :print(word[0:5])
+                     print(word[6:11])
+                     print(word[:5]) # it print starting of the string to given index
+                     print(word[6:]) # it print given index of the string to ending index
+                     print(word[:]) # whole index of the string is
+                     print(word[0:5:2])  # print the index by incrementing 2
+                     print(word[::-1]) # to print the reverse order of the string
+
+      * string iteration
+               * eg : for i in word:
+                         print(i)
+
+
+                                 day 16
+
+--> create an empty string
+      * eg: string_1= str()
+            #or r=''
+
+--> f string
+     * eg : self_intro_1='i am {0} i am working as a {1} at {2}'.format(name,desigination,company)
+
+--> {1:s} giving the data type string only
+    {1:d} digit only
+    {1:f} float only
+
+--> .upper()
+    .lower()
+
+--> check upper or lower
+       * isupper() and islower()
+
+--> string methods
+       * upper()
+		convert to uppercase
+       * lower()
+		convert to lowercase
+       * title()
+              # to convert each first character of word to upper case
+       * capitalize()
+              to convert only the first character to upper case
+       * swapcase()
+               to convert upper case to lower case and lower to upper
+	* find()
+		which is to return a specific position of a value
+	* index()
+		use to return a specific position of a value
+	* replace()
+		to replace old one to new
+	* split()
+		it split a word and returns a list
+	* strip()
+		remove unwanted white spaces
+	* lstrip()
+		remove left spaces
+	* rstrip()
+		remove right spaces
+	* count()
+		returns the number of times a specific value occured
+	* enumerate()
+		iterate and print character and postion
+		eg: for num,char in enumerate(text)
+
+--> string checkers
+
+	* islower()
+	* isupper()
+	* isalnum()
+	* isalpha()
+	* isnumeric()
+	* isdigit()
+	* isspace()
+	* istitle()
+                              day 17
+
+--> list
+
+	* eval()
+		it is a bulid in function that takes a string expertion and evaluvates it as a valid python experssion and returns the result
+          eg : n=eval(input('enter the string : '))
+
+
+--> list methods
+
+	* append(element)
+		add element at the end of the list
+	* insert(postion,element)
+		 add element by position
+	* extend(list)
+		 add list of elements to an existing list
+	* index(element)
+		 it return the position
+	* pop()
+		 it delete the last element
+	* pop(position)
+		 it delete the elements by position
+	* remove(element)
+		 delete using element name
+	* reverse()
+		 to reverse a list
+	* sort()
+		 ascending
+	* sort(reverse=True)
+		 decending
+	* count()
+		to take  the count
+	* clear()
+		 keep the list but clear all elements
+
+
+--> dictionary
+
+	* keys()
+	* values()
+	* items()
+	* get()
+	* pop()
+		give key removes the key and value
+	* popitem()
+		remove last one
+	* update()
+	* clear()
+
+                                day 18
+
+--> set
+
+	collection of elements
+	unordered
+	{}
+	unindexed
+	duplications are not possible
+	mutable
+
+--> set methods
+
+	* add(element)
+	* pop()
+	* remove()
+	* union()
+		it combines two or more set
+	* intersection()
+		common elements
+	* symmetric difference
+		common stops remain print
+
+
+                                day 19
+
+
+
+--> tuple()
+
+	* len()
+	* count()
+	* index()
+	* iteration()
+	* slicing
+	* element accessing
+
+
+--> functions
+
+	* funtion is set of code to do  perticular task
+	* build-in function
+	* user define function
+		->def is used to define
+			eg:def first():
+    				print('hello')
+			   first()
+
+
+				day 20
+
+
+-->argument classification
+
+	1. positional argument
+	2. default argument
+	3. arbitrary argument
+		* if you don't know how many args that are passing into a function use arbitrary argument
+		* denoted using * followed by arg name
+		* stores data type as tuple
+	4. keyword argument
+		* args passed into fn by specifying key name ,here the order of args doesn't matter
+	5. arbitrary keyword argument
+		* if you don't know how many key value pairs passing into fn use arbitrary keyword argument
+		* denoted by ** follwed by args
+		* stores as data type dictionary
+
+--> function with return type
+		* it returns a value into a fn call
+
+--> return : stores the data
+--> print : output to the console
+
+			day 21
+
+--> lambda function
+
+	*  lambda is an unanimous which means function without name
+	* it is a single line function
+	* syntax :
+		x=lambda args: expression
+
+
+			day 22
+
+--> conditions in lambda
+
+	*syntax:
+		 x=lambda a,b : a if(a>b) else b
+		 print(x(3,4))
+	   eg:
+		 j=lambda a,b,c: f'{a} is largest' if(a>b and a>c) else (f'{b} is largest'if(b>c) else f'{c} is largest')
+		 print(j(4,5,2))
+
+			day 23
+
+--> lambda filter() , map(), reduce()
+
+	-> filter()
+
+		* filter that takes a sequence as an argument and this will filter out all the elements in sqeuence
+		*  output have to mention the data type to print
+
+		* syntax:
+			x= filter(lambda args: expression , sequence element )
+
+
+	->map()
+
+		* the map() in lambda that takes a sequence as an argument and a sequence is returned
+		* the expression in map that applies to all elements in the sequence
+		* syntax:
+			* x= map(lambda args: expression , sequence element )
+
+
+                              day 24
+
+	->reduce()
+		* it is used to reduce iterable to a single value
+		* from functools import reduce
+		* functools : package
+		* reduce : module
+		* syntax:
+		      * x=reduce(lambda arg: expression , sequence_name)
+
+
+                              day 25
+
+--> modules
+
+	* modules are collection of functions with .py extension
+	* two types :
+	1] built in modules
+	2] user defined modules
+
+1. math module
+2. calender module
+3. time module
+4. datetime module
+5. random module
+6. os module
+
+                                   day27
+
+--> package
+	* a python package is a collection of modules grouped together in a directory with an __int__.py
+
+	* this structure allows for organizing related modules (code file) into a single unit
+
+		mypackage/
+  		__init__.py
+  		module1.py
+  		module2.py
+
+	* to install a package -> pip install package_name
+	# example pip install django
+
+	* to import a package -> from package_name import module_name
+
+
+
+--> oops concept in  python
+
+	* what is oops concept ?
+
+	oops (object-oriented programming) concept refers to a programming pattern based on the concept of objects.
+
+	objects can contain both data (attributes) and functions (methods)
+
+	the primary goal of oop is to increase flexibility and maintainability in programming
+
+--> advantages of oops concept ?
+
+	modularity
+	reusability
+	flexibility
+	scalability
+	security
+	better program solving approach
+
+--> major principle of oops?
+
+	class: collection of objects
+	object : real world entity ,instance of class
+	inheritence : method of accessing properties and behavour of another class
+	abstraction : it's a method shows neccesary information to user by hiding unneccecsary
+	encapsulation : wrapping of data , using a class we can make a data public , private , protected
+	polymorphism : method in which that can be use in different ways
+
+
+-> function def in class is called member function or method
+	# in object oriented programming self is default instance that is used as the first parameters to allow access to the object attributtes and other methods
+
+
+
+--> static variable and dynamic
+
+-> static variable :
+	* a variable that is defined inside a class and outside a method
+	*  can,t change
+	# syntax :
+	class class_name:
+	     static_variable = data
+-->dynamic :
+            * can change
+                                                           day 28
+
+--> constructor in  class
+
+	* constructors are special methods that are used to initialize the value directly into a class during object creation
+	* __init__()   # constructor     # special method
+	# using __init__ directly enter the input
+
+--> inheritance
+    * a class that inherits the properties and behaviour or another class
+
+  --> types of inheritance
+  1] single : single child that inherits from a single parent
+  2] multiple : multiple parents and a single child
+  3] multilevel : a derived class that inherits from another derived class
+  4] hierarchical : a single parent and multiple child
+  5] hybrid :combination of inheritance
+
+
+--> super()
+    * that is used to give access the contractor of parent class
+
+
+
+
+
