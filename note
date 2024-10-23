@@ -702,7 +702,7 @@ body of else
 --> super()
     * that is used to give access the contractor of parent class
 
-
+--> to inherit two or more class then don't use super() use class.__init__()
 
 
 
