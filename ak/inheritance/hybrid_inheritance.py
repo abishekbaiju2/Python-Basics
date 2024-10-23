@@ -69,5 +69,5 @@ class program_director(under_graduate_program,post_graduate_program):
         self.display2()
         print('director_name=',self.director_name)
 
-obj=program_director('ktu','tvm','arun','btech','akhil','engineer','appu')
+obj=program_director('ktu','tvm','arun','btech','akhil','drone','appu')
 obj.display3()
