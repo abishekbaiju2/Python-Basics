@@ -727,3 +727,9 @@ body of else
      self.name=name # public data member
      self._address=address # protected data members
      self.__phone= phone # private data member
+
+--> name mangling
+
+    it is a method of giving access to the private data members  and the methods inside a class
+    # syntax
+    _classname_
