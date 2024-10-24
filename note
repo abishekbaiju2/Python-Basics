@@ -732,4 +732,17 @@ body of else
 
     it is a method of giving access to the private data members  and the methods inside a class
     # syntax
-    _classname_
+      _classname__datamember
+
+--> polymorphism
+
+    many forms
+    same function that can be used in diff ways
+  * eg:
+        len()
+        pop()
+
+--> method overloading
+    same function name with different arguments
+
+--> method overriding
