@@ -659,8 +659,8 @@ body of else
 
 	class: collection of objects
 	object : real world entity ,instance of class
-	inheritence : method of accessing properties and behavour of another class
-	abstraction : it's a method shows neccesary information to user by hiding unneccecsary
+	inheritance : method of accessing properties and behaviour of another class
+	abstraction : it's a method shows necessary information to user by hiding unnecessary
 	encapsulation : wrapping of data , using a class we can make a data public , private , protected
 	polymorphism : method in which that can be use in different ways
 
@@ -698,11 +698,32 @@ body of else
   4] hierarchical : a single parent and multiple child
   5] hybrid :combination of inheritance
 
+                                            day 29
 
 --> super()
+
     * that is used to give access the contractor of parent class
 
 --> to inherit two or more class then don't use super() use class.__init__()
 
+                                        day30
 
+--> encapsulation
 
+    encapsulation is one of the fundamental concept in oops.
+    it describes the idea of wrapping data and the methods.
+    this puts restrictions on accessing variables and methods directly.
+    it can prevent the accidental modification of data.
+
+--> access modifier
+
+    in object oriented programming access modifier are used to limit.
+    the access to the variables and functions of a class.
+
+--> public access modifiers : accessible anywhere from outside the class.
+--> private access modifier : accessible within the class.
+--> protected access modifier : accessible within the class and its sub-classes
+ * eg:
+     self.name=name # public data member
+     self._address=address # protected data members
+     self.__phone= phone # private data member
