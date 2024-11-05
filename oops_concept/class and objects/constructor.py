@@ -1,16 +1,16 @@
-# class student:
-#     def __init__(self,stud_name,roll_num,age):
-#         self.stud_name=stud_name
-#         self.roll_num=roll_num
-#         self.age=age
-#
-#     def display(self):
-#         print(self.stud_name)
-#         print(self.roll_num)
-#         print(self.age)
-#
-# obj1=student('arun',12,22) # directly pass input
-# obj1.display()
+class student:
+    def __init__(self,stud_name,roll_num,age):
+        self.stud_name=stud_name
+        self.roll_num=roll_num
+        self.age=age
+
+    def display(self):
+        print(self.stud_name)
+        print(self.roll_num)
+        print(self.age)
+
+obj1=student('arun',12,22) # directly pass input
+obj1.display()
 
 
 # create  a class library_management
