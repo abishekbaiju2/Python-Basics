@@ -10,6 +10,8 @@ sql='create database products'
 
 mycursor.execute(sql)
 
-dbconnect.commit()
+dbconnect.commit() # save
 
-print('database created successfully...')
+print('database created successfully...') # just to see in console
+
+
