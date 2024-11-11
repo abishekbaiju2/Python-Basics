@@ -7,11 +7,7 @@ mycursor=rgconnect.cursor()
 class website:
 
     def register_user(self,name,email,phone,password):
-        self.name=name
-        self.email=email
-        self.phone=phone
-        self.password=password
-        sql=f'insert into register(name,email,phone,password) values("{self.name}","{self.email}",{self.phone},"{self.password}")'
+        sql=f'insert into register(name,email,phone,password) values("{name}","{email}",{phone},"{password}")'
         mycursor.execute(sql)
         rgconnect.commit()
         print('user registered')
@@ -25,11 +21,40 @@ class website:
                 print('login successfully')
                 break
             else:
-                print('invalid user')
+                print('login failed')
+                break
 
     def delete_user(self,email,password):
-        print('deleted')
-    # def user_display(self,email,password):
+        sql = 'select email,password from register'
+        mycursor.execute(sql)
+        n = mycursor.fetchall()
+        for i in n:
+            if i[0]==email and i[1]==password:
+                sql=f'delete from register where email="{email}" and password="{password}"'
+                mycursor.execute(sql)
+                rgconnect.commit()
+                print('deleted')
+                break
+            else:
+                print('invalid user')
+                break
+
+    def user_display(self,email,password):
+        sql = 'select email,password from register'
+        mycursor.execute(sql)
+        n = mycursor.fetchall()
+        for i in n:
+            if i[0]==email and i[1]==password:
+                sql = f'select * from register where email="{email}" and password="{password}"'
+                mycursor.execute(sql)
+                m = mycursor.fetchall()
+                print(m)
+                break
+            else:
+                print('invalid user')
+                break
+
+
 
 
 obj=website()
@@ -38,5 +63,8 @@ obj=website()
 # obj.register_user('alex','alex@gmail.com',9877747474,'alex123')
 # obj.register_user('arun','arun@gmail.com',424242352,'arun123')
 
-# obj.login_user('akhil','akhil@gmail.com')
-# obj.delete_user()
+# obj.login_user('akhil@gmail.com','akhil123')
+
+obj.delete_user('akhil@gmail.com','akhil123')
+
+# obj.user_display('akhil@gmail.com','akhil123')
